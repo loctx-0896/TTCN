@@ -9,3 +9,4 @@ users:
   password:
     minimum: 6
 remember: "1"
+perpage: 5

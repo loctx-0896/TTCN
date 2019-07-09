@@ -1,8 +1,37 @@
-.form_login{
-	width: 900px;
-	padding-left: 400px;
+.form_login {
+  width: 900px;
+  padding-left: 400px;
 }
 
-.form_login h4{
-	font-weight: bold;
+.form_login h4 {
+  font-weight: bold;
+}
+
+.content {
+  padding-top: 120px;
+  width: 1640px;
+  padding-left: 280px;
+}
+
+.child_cat {
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+.add_category {
+  font-size: 20px;
+}
+
+.pagination {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.pagination a {
+  color: rgb(122, 122, 218);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
 }

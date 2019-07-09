@@ -13,3 +13,20 @@ User.create!(name: "LocDepTrai",
                password_confirmation: password,
                activated: 1)
 end
+
+3.times do |n|
+  name  = Faker::Name.name
+  Category.create!(name: name)
+end
+Category.create!(name: "LocDepTrai1",
+                parent_id: 1)
+Category.create!(name: "LocDepTrai2",
+                parent_id: 1)
+Category.create!(name: "LocDepTrai3",
+                parent_id: 2)
+Category.create!(name: "LocDepTrai4",
+                parent_id: 2)
+Category.create!(name: "LocDepTrai5",
+                parent_id: 3)
+Category.create!(name: "LocDepTrai6",
+                parent_id: 3)
