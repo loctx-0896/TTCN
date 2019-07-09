@@ -1,4 +1,8 @@
 en:
+  alert:
+    add_to_cart:
+      success: "Add to cart successful"
+      fail: "Add to cart fail"
   controllers:
     admin:
       categories:
@@ -83,6 +87,11 @@ en:
       my_account: "Account"
       logout: "Logout"
       login: "Login"
+      home: "Home"
+      category: "Categories"
+      discount: "Discount"
+      blog: "Blog"
+      contact: "Contact"
     products:
       quick_view: "Quick View"
     purchase:
@@ -98,6 +107,9 @@ en:
   static_pages:
     home:
       title: "Home"
+      products: "Products"
+      filter: "Filter"
+      search: "Search"
   number:
     currency:
       format:
