@@ -1,0 +1,25 @@
+<tr>
+  <td>
+    <%= product.name %>
+  </td>
+  <td>
+    <%= product.description %>
+  </td>
+  <td class="resize_image">
+    <%= image_tag product.picture.url if product.picture? %>
+  </td>
+  <td>
+    <%= product.detail %>
+  </td>
+  <td>
+    <%= number_to_currency(product.price, unit: "VND") %>
+  </td>
+  <td>
+    <%= product.status %>
+  </td>
+  <td>
+    <%= product.category.name %>
+  </td>
+  <td><%= link_to t(".edit"), edit_admin_product_path(product), method: :get %> |
+    <%= link_to t(".delete"), admin_product_path(product), method: :delete, data: {confirm: t(".confirm")} %></td>
+</tr>

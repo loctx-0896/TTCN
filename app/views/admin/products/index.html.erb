@@ -1,0 +1,36 @@
+<% provide :title, t(".title") %>
+<div class="content">
+  <%= link_to t(".add_product"), new_admin_product_path, class: "add_product" %>
+  <table class="table">
+    <thead class=" text-primary">
+      <th>
+        <%= t(".name") %>
+      </th>
+      <th>
+        <%= t(".description") %>
+      </th>
+      <th>
+        <%= t(".picture") %>
+      </th>
+      <th>
+        <%= t(".detail") %>
+      </th>
+      <th>
+        <%= t(".price") %>
+      </th>
+      <th>
+        <%= t(".status") %>
+      </th>
+      <th>
+        <%= t(".category") %>
+      </th>
+      <th>
+        <%= t(".function") %>
+      </th>
+    </thead>
+    <tbody>
+      <%= render @products %>
+    </tbody>
+  </table>
+  <%= will_paginate %>
+</div>

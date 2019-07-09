@@ -14,9 +14,10 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.integer "parent_id"
+    t.bigint "parent_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["parent_id"], name: "fk_rails_82f48f7407"
   end
 
   create_table "contacts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -94,6 +95,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "categories", "categories", column: "parent_id"
   add_foreign_key "contacts", "users"
   add_foreign_key "detail_orders", "orders"
   add_foreign_key "detail_orders", "products"

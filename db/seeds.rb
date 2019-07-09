@@ -30,3 +30,18 @@ Category.create!(name: "LocDepTrai5",
                 parent_id: 3)
 Category.create!(name: "LocDepTrai6",
                 parent_id: 3)
+
+10.times do |n|
+  name  = Faker::Name.name
+  Product.create!(name: name, category_id: 1)
+end
+
+10.times do |n|
+  name  = Faker::Name.name
+  Product.create!(name: name, category_id: 2)
+end
+
+10.times do |n|
+  name  = Faker::Name.name
+  Product.create!(name: name, category_id: 3)
+end
