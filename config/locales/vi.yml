@@ -49,6 +49,11 @@ vi:
     sessions:
       login_success: "Đăng nhập thành công"
       login_fail: "Tài khoản hoặc mật khẩu không đúng"
+    users:
+      login_please: "Vui lòng đăng nhập!"
+      update_success: "Cập nhật thông tin cá nhân thành công"
+      update_fail: "Cập nhật thông tin cá nhân thất bại"
+      can_not: "Không thể sửa thông tin của người khác. Đây là thông tin của bạn."
   helpers:
     base_title: "Mua ngay!"
   admin:
@@ -167,6 +172,11 @@ vi:
       blog: "Blog"
       contact: "Liên hệ"
       manager: "Quản trị viên"
+      categories: "Danh mục"
+      products: "Sản phẩm"
+      users: "Người dùng"
+      orders: "Đơn hàng"
+      contacts: "Liên hệ"
     products:
       quick_view: "Xem nhanh"
     purchase:
@@ -199,6 +209,20 @@ vi:
       products: "Sản phẩm"
       filter: "Lọc"
       search: "Tìm kiếm"
+  users:
+    show:
+      title: "Thông tin cá nhân"
+      name: "Tên: "
+      phone: "Số điện thoại: "
+      email: "Email: "
+      update_profile: "Cập nhật trang cá nhân"
+    edit:
+      title: "Cập nhật thông tin cá nhân"
+      name: "Tên"
+      picture: "Ảnh đại diện"
+      phone: "Số điện thoại"
+      password: "Mật khẩu"
+      save: "Lưu"
   number:
     currency:
       format:

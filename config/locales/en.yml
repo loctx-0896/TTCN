@@ -49,6 +49,11 @@ en:
     sessions:
       login_success: "Successful login"
       login_fail: "Fail login"
+    users:
+      login_please: "Login, please!"
+      update_success: "Update successful"
+      update_fail: "Update fail"
+      can_not: "Can't edit profile more. This is your profile."
   helpers:
     base_title: "Shop now!"
   admin:
@@ -167,6 +172,11 @@ en:
       blog: "Blog"
       contact: "Contact"
       manager: "Management"
+      categories: "Categories"
+      products: "Products"
+      users: "Users"
+      orders: "Orders"
+      contacts: "Contacts"
     products:
       quick_view: "Quick View"
     purchase:
@@ -199,6 +209,20 @@ en:
       products: "Products"
       filter: "Filter"
       search: "Search"
+  users:
+    show:
+      title: "Profile"
+      name: "Name: "
+      phone: "Phone number: "
+      email: "Email: "
+      update_profile: "Update profile"
+    edit:
+      title: "Update profile"
+      name: "Name"
+      picture: "Avatar"
+      phone: "Phone number"
+      password: "Password"
+      save: "Save"
   number:
     currency:
       format:
