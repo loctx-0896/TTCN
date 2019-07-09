@@ -125,6 +125,13 @@ en:
       phone: "Your phone"
       address: "Your address"
       submit: "Submit"
+  products_detail:
+    show:
+      title: "Product detail"
+      add_to_cart: "Add to cart"
+      review: "Reviews"
+      more_product: "More product"
+      price: "Price: "
   sessions:
     new:
       login: "Login"

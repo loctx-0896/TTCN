@@ -125,6 +125,13 @@ vi:
       phone: "Số điện thoại của bạn"
       address: "Địa chỉ nhận hàng"
       submit: "Hoàn thành"
+  products_detail:
+    show:
+      title: "Chi tiết sản phẩm"
+      add_to_cart: "Thêm vào giỏ hàng"
+      review: "Đánh giá"
+      more_product: "Sản phẩm khác"
+      price: "Giá bán: "
   sessions:
     new:
       login: "Đăng nhập"
