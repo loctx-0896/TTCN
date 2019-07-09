@@ -1,10 +1,25 @@
 en:
+  controllers:
+    sessions:
+      login_success: "Successful login"
+      login_fail: "Fail login"
   helpers:
     base_title: "Shop now!"
   layouts:
     header:
       language_en: "English"
       language_vi: "Tiếng Việt"
+      my_account: "Account"
+      logout: "Logout"
+      login: "Login"
+  sessions:
+    new:
+      login: "Login"
+      email: "Email"
+      password: "Password"
+      remember_me: "Remember me"
+      notuser: "Not account?"
+      signupnow: "Signup now"
   static_pages:
     home:
       title: "Home"

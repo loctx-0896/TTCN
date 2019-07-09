@@ -1,10 +1,25 @@
 vi:
+  controllers:
+    sessions:
+      login_success: "Đăng nhập thành công"
+      login_fail: "Tài khoản hoặc mật khẩu không đúng"
   helpers:
     base_title: "Mua ngay!"
   layouts:
     header:
       language_en: "English"
       language_vi: "Tiếng việt"
+      my_account: "Tài khoản"
+      logout: "Đăng xuất"
+      login: "Đăng nhập"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      remember_me: "Nhớ tôi"
+      notuser: "Chưa có tài khoản?"
+      signupnow: "Đăng kí ngay"
   static_pages:
     home:
       title: "Trang chủ"
