@@ -1,3 +1,10 @@
 vi:
   helpers:
     base_title: "Mua ngay!"
+  layouts:
+    header:
+      language_en: "English"
+      language_vi: "Tiếng việt"
+  static_pages:
+    home:
+      title: "Trang chủ"
