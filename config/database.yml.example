@@ -1,0 +1,27 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: 12345678
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: fad_development
+  host: localhost
+  username: root
+  password: 12345678
+
+test:
+  <<: *default
+  database: fad_test
+  host: localhost
+  username: root
+  password: 12345678
+
+production:
+  <<: *default
+  database: fad_production
+  username: ecommerce
+  password: <%= ENV["ECOMMERCE_DATABASE_PASSWORD"] %>
