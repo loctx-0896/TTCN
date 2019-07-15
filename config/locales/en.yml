@@ -1,3 +1,10 @@
 en:
   helpers:
     base_title: "Shop now!"
+  layouts:
+    header:
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+  static_pages:
+    home:
+      title: "Home"
