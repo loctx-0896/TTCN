@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
     t.string "phone"
     t.string "password_digest"
     t.string "remember_digest"
-    t.string "avtivation_digest"
+    t.string "activation_digest"
     t.string "reset_digest"
     t.string "fb_token"
     t.string "gg_token"
