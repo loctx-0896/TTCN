@@ -83,6 +83,10 @@ en:
       my_account: "Account"
       logout: "Logout"
       login: "Login"
+    products:
+      quick_view: "Quick View"
+    purchase:
+      add_to_cart: "Add to Cart"
   sessions:
     new:
       login: "Login"
@@ -94,3 +98,8 @@ en:
   static_pages:
     home:
       title: "Home"
+  number:
+    currency:
+      format:
+        format: "%n%u"
+        unit: "VND"
