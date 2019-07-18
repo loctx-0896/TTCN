@@ -1,10 +1,41 @@
 en:
   controllers:
+    admin:
+      categories:
+        add_success: "Add successful"
+        add_fail: "Add fail"
+        update_success: "Update successful"
+        delete_success: "Delete successful"
+        delete_fail: "Delete fail"
+        not_found_category: "Category not found"
     sessions:
       login_success: "Successful login"
       login_fail: "Fail login"
   helpers:
     base_title: "Shop now!"
+  admin:
+    categories:
+      category:
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure to delete?"
+      edit:
+        title: "Edit Category"
+        update_category: "Update Category"
+        name: "Name"
+        save_changes: "Save Changes"
+      index:
+        title: "Category"
+        id: "Id"
+        name: "Name"
+        function: "Function"
+        add_category: "Add Category"
+      new:
+        title: "Add Category"
+        update_category: "Add Category"
+        name: "Name"
+        save_changes: "Save"
+        new_name_category: "Select the parent category"
   layouts:
     header:
       language_en: "English"

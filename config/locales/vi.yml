@@ -1,10 +1,41 @@
 vi:
   controllers:
+    admin:
+      categories:
+        add_success: "Thêm thành công"
+        add_fail: "Thêm thất bại"
+        update_success: "Cập nhật thành công"
+        delete_success: "Xóa thành công"
+        delete_fail: "Xóa thất bại"
+        not_found_category: "Danh mục không tồn tại"
     sessions:
       login_success: "Đăng nhập thành công"
       login_fail: "Tài khoản hoặc mật khẩu không đúng"
   helpers:
     base_title: "Mua ngay!"
+  admin:
+    categories:
+      category:
+        edit: "Sửa"
+        delete: "Xóa"
+        confirm: "Bạn có chắc chắn muốn xóa?"
+      edit:
+        title: "Sửa danh mục"
+        update_category: "Sửa danh mục"
+        name: "Tên"
+        save_changes: "Lưu thay đổi"
+      index:
+        title: "Danh mục"
+        id: "Id"
+        name: "Tên"
+        function: "Chức năng"
+        add_category: "Thêm danh mục"
+      new:
+        title: "Thêm danh mục"
+        update_category: "Thêm danh mục"
+        name: "Tên"
+        save_changes: "Lưu"
+        new_name_category: "Chọn danh mục cha"
   layouts:
     header:
       language_en: "English"
