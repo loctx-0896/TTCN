@@ -83,6 +83,10 @@ vi:
       my_account: "Tài khoản"
       logout: "Đăng xuất"
       login: "Đăng nhập"
+    products:
+      quick_view: "Xem nhanh"
+    purchase:
+      add_to_cart: "Thêm vào giỏ hàng"
   sessions:
     new:
       login: "Đăng nhập"
@@ -94,3 +98,8 @@ vi:
   static_pages:
     home:
       title: "Trang chủ"
+  number:
+    currency:
+      format:
+        format: "%n%u"
+        unit: "VND"
