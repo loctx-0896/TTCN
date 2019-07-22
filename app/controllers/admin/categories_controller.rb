@@ -2,8 +2,9 @@ class Admin::CategoriesController < ApplicationController
   before_action :load_category, only: %i(edit update destroy)
 
   def index
-    @categories = Category.parent_categories.paginate page: params[:page],
-      per_page: Settings.perpage
+    @categories = Category.parent_categories.sort_categories
+                          .paginate page: params[:page],
+                           per_page: Settings.perpage
   end
 
   def new

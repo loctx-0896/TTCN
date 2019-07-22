@@ -4,4 +4,5 @@ class Category < ActiveRecord::Base
     foreign_key: :parent_id, dependent: :destroy
   scope :parent_categories, ->{where "parent_id IS NULL"}
   scope :child_categories, ->(id){where parent_id: id}
+  scope :sort_categories, ->{order(created_at: :desc)}
 end

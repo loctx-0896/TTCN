@@ -8,6 +8,14 @@ en:
         delete_success: "Delete successful"
         delete_fail: "Delete fail"
         not_found_category: "Category not found"
+      products:
+        add_success: "Add successful"
+        add_fail: "Add fail"
+        update_success: "Update successful"
+        delete_success: "Delete successful"
+        delete_fail: "Delete fail"
+        not_found_product: "Product not found"
+        not_found_category: "Category not found"
     sessions:
       login_success: "Successful login"
       login_fail: "Fail login"
@@ -36,6 +44,38 @@ en:
         name: "Name"
         save_changes: "Save"
         new_name_category: "Select the parent category"
+    products:
+      product:
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure to delete?"
+      edit:
+        title: "Edit product"
+        name: "Name"
+        description: "Description"
+        picture: "Picture"
+        price: "Price"
+        category_name: "Category name"
+        save: "Save"
+      index:
+        title: "Products"
+        add_product: "Add product"
+        name: "Name"
+        description: "Description"
+        picture: "Picture"
+        price: "Price"
+        status: "Status"
+        category: "Category"
+        function: "Function"
+      new:
+        title: "Add category"
+        name: "Name"
+        description: "Description"
+        detail: "Detail"
+        picture: "Picture"
+        price: "Price"
+        category_name: "Category"
+        save: "Save"
   layouts:
     header:
       language_en: "English"

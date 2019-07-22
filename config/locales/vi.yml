@@ -8,6 +8,14 @@ vi:
         delete_success: "Xóa thành công"
         delete_fail: "Xóa thất bại"
         not_found_category: "Danh mục không tồn tại"
+      products:
+        add_success: "Thêm thành công"
+        add_fail: "Thêm thất bại"
+        update_success: "Cập nhật thành công"
+        delete_success: "Xóa thành công"
+        delete_fail: "Xóa thất bại"
+        not_found_product: "Sản phẩm không tồn tại"
+        not_found_category: "Danh mục sản phẩm không tồn tại"
     sessions:
       login_success: "Đăng nhập thành công"
       login_fail: "Tài khoản hoặc mật khẩu không đúng"
@@ -36,6 +44,38 @@ vi:
         name: "Tên"
         save_changes: "Lưu"
         new_name_category: "Chọn danh mục cha"
+    products:
+      product:
+        edit: "Sửa"
+        delete: "Xóa"
+        confirm: "Bạn có chắc chắn muốn xóa?"
+      edit:
+        title: "Sửa sản phẩm"
+        name: "Tên"
+        description: "Mô tả"
+        picture: "Ảnh"
+        price: "Giá"
+        category_name: "Tên danh mục"
+        save: "Lưu"
+      index:
+        title: "Sản phẩm"
+        add_product: "Thêm sản phẩm"
+        name: "Tên"
+        description: "Mô tả"
+        picture: "Ảnh"
+        price: "Giá"
+        status: "Trạng thái"
+        category: "Danh mục"
+        function: "Chức năng"
+      new:
+        title: "Thêm sản phẩm"
+        name: "Tên"
+        description: "Mô tả"
+        detail: "Chi tiết"
+        picture: "Hình ảnh"
+        price: "Giá"
+        category_name: "Danh mục"
+        save: "Lưu"
   layouts:
     header:
       language_en: "English"
