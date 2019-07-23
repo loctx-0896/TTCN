@@ -59,7 +59,9 @@
             <i class="fas fa-search"></i>
           </div>
           <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" id="quantity_products" data-notify="<%= size_cart %>">
-            <i class="fas fa-cart-plus"></i>
+            <%= link_to cart_path do %>
+              <i class="fas fa-cart-plus"></i>
+            <% end %>
           </div>
           <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti" data-notify="0">
           <i class="fas fa-heart"></i>

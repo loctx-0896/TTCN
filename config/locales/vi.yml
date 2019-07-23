@@ -80,6 +80,17 @@ vi:
         price: "Giá"
         category_name: "Danh mục"
         save: "Lưu"
+  carts:
+    index:
+      title: "Giỏ hàng"
+      name: "Sản phẩm"
+      price: "Giá"
+      quantity: "Số lượng"
+      total: "Tổng"
+      apply_code: "Áp mã"
+      update_cart: "Cập nhật giỏ hàng"
+      cart_totals: "Tổng tiền"
+      proceed_to_checkout: "Thanh toán"
   layouts:
     header:
       language_en: "English"
