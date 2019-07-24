@@ -1,4 +1,8 @@
 vi:
+  alert:
+    add_to_cart:
+      success: "Thêm vào giỏ hàng thành công"
+      fail: "Thêm vào giỏ hàng thất bại"
   controllers:
     admin:
       categories:
@@ -83,6 +87,11 @@ vi:
       my_account: "Tài khoản"
       logout: "Đăng xuất"
       login: "Đăng nhập"
+      home: "Trang chủ"
+      category: "Danh mục"
+      discount: "Khuyến mãi"
+      blog: "Blog"
+      contact: "Liên hệ"
     products:
       quick_view: "Xem nhanh"
     purchase:
@@ -98,6 +107,9 @@ vi:
   static_pages:
     home:
       title: "Trang chủ"
+      products: "Sản phẩm"
+      filter: "Lọc"
+      search: "Tìm kiếm"
   number:
     currency:
       format:
