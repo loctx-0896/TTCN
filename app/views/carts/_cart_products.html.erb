@@ -1,0 +1,23 @@
+<tr class="table_row">
+  <td class="column-1">
+    <div class="how-itemcart1">
+      <img src="<%= cart_products.picture %>" alt="IMG">
+    </div>
+  </td>
+  <td class="column-2"><%= cart_products.name %></td>
+  <td class="column-3"><%= number_to_currency cart_products.price %></td>
+  <td class="column-4">
+    <div class="wrap-num-product flex-w m-l-auto m-r-0">
+      <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+        <i class="fas fa-minus"></i>
+      </div>
+
+      <input class="mtext-104 cl3 txt-center num-product" type="number" name="num-product1" value="<%= cart_products.total_quantity %>">
+
+      <div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+        <i class="fas fa-plus"></i>
+      </div>
+    </div>
+  </td>
+  <td class="column-5"><%= number_to_currency total_price(cart_products.total_quantity, cart_products.price) %></td>
+</tr>

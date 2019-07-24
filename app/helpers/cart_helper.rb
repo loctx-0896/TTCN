@@ -23,4 +23,21 @@ module CartHelper
     check_cookie_cart
     @products.size
   end
+
+  def total_price quantity, price
+    @total_price = quantity * price
+  end
+
+  def total_cart
+    @products.reduce(0) do |s, p|
+      s + (p.price * p.total_quantity)
+    end
+  end
+
+  def list_product product_cart
+    @products = Product.find_product_by_id product_cart.keys
+    @products.each do |p|
+      p.total_quantity = product_cart[p.id.to_s].to_i
+    end
+  end
 end

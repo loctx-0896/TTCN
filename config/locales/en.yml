@@ -80,6 +80,17 @@ en:
         price: "Price"
         category_name: "Category"
         save: "Save"
+  carts:
+    index:
+      title: "Cart"
+      name: "Product"
+      price: "Price"
+      quantity: "Quantity"
+      total: "Total"
+      apply_code: "Apply code"
+      update_cart: "Update cart"
+      cart_totals: "Cart totals"
+      proceed_to_checkout: "Proceed to checkout"
   layouts:
     header:
       language_en: "English"

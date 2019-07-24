@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
-    post "/shopping", to: "cart#shopping"
+    get "/cart", to: "carts#index"
+    post "/shopping", to: "carts#shopping"
     namespace :admin do
       resources :categories
       resources :products
