@@ -12,6 +12,7 @@
                 <th class="column-3"><%= t(".price") %></th>
                 <th class="column-4"><%= t(".quantity") %></th>
                 <th class="column-5"><%= t(".total") %></th>
+                <th class="column-6"><%= t(".delete") %></th>
               </tr>
               <%= render partial: "carts/cart_products", collection: @products %>
             </table>
@@ -25,10 +26,6 @@
               <div class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
                 <%= t(".apply_code") %>
               </div>
-            </div>
-
-            <div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
-              <%= t(".update_cart") %>
             </div>
           </div>
         </div>
@@ -49,7 +46,7 @@
 
             <div class="size-209 p-t-1">
               <span class="mtext-110 cl2">
-                <p><%= number_to_currency total_cart %></p>
+                <p id="total-cart"><%= number_to_currency total_cart %></p>
               </span>
             </div>
           </div>
@@ -62,3 +59,4 @@
     </div>
   </div>
 </form>
+<%= javascript_include_tag "ajax_cart" %>
