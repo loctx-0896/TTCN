@@ -3,6 +3,8 @@ en:
     add_to_cart:
       success: "Add to cart successful"
       fail: "Add to cart fail"
+    update_cart:
+      fail: "Update to cart fail"
   controllers:
     admin:
       categories:
@@ -91,6 +93,9 @@ en:
       update_cart: "Update cart"
       cart_totals: "Cart totals"
       proceed_to_checkout: "Proceed to checkout"
+      delete: "Delete"
+    cart_products:
+      confirm: "Are you sure?"
   layouts:
     header:
       language_en: "English"

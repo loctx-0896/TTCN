@@ -3,6 +3,8 @@ vi:
     add_to_cart:
       success: "Thêm vào giỏ hàng thành công"
       fail: "Thêm vào giỏ hàng thất bại"
+    update_cart:
+      fail: "Sửa giỏ hàng thất bại"
   controllers:
     admin:
       categories:
@@ -91,6 +93,9 @@ vi:
       update_cart: "Cập nhật giỏ hàng"
       cart_totals: "Tổng tiền"
       proceed_to_checkout: "Thanh toán"
+      delete: "Xóa"
+    cart_products:
+      confirm: "Bạn có chắc chắn muốn xóa?"
   layouts:
     header:
       language_en: "English"

@@ -34,10 +34,22 @@ module CartHelper
     end
   end
 
+  def update_quantity_product product_id, quantity
+    check_cookie_cart
+    @products[product_id] = quantity
+    update_cookie_cart @products
+  end
+
   def list_product product_cart
     @products = Product.find_product_by_id product_cart.keys
     @products.each do |p|
       p.total_quantity = product_cart[p.id.to_s].to_i
     end
+  end
+
+  def delete_product_cart product_id
+    check_cookie_cart
+    @products.delete product_id
+    update_cookie_cart @products
   end
 end
