@@ -6,6 +6,7 @@ vi:
     update_cart:
       fail: "Sửa giỏ hàng thất bại"
   controllers:
+    before_order: "Vui lòng đăng nhập."
     admin:
       categories:
         add_success: "Thêm thành công"
@@ -22,6 +23,11 @@ vi:
         delete_fail: "Xóa thất bại"
         not_found_product: "Sản phẩm không tồn tại"
         not_found_category: "Danh mục sản phẩm không tồn tại"
+    orders:
+      product_cart_empty: "Giỏ hàng trống"
+      order_success: "Đặt hàng thành công"
+      order_fail: "Đặt hàng thất bại"
+      phone_empty: "Số điện thoại không được trống"
     sessions:
       login_success: "Đăng nhập thành công"
       login_fail: "Tài khoản hoặc mật khẩu không đúng"
@@ -112,6 +118,13 @@ vi:
       quick_view: "Xem nhanh"
     purchase:
       add_to_cart: "Thêm vào giỏ hàng"
+  orders:
+    new:
+      title: "Thông tin hóa đơn"
+      name: "Tên của bạn"
+      phone: "Số điện thoại của bạn"
+      address: "Địa chỉ nhận hàng"
+      submit: "Hoàn thành"
   sessions:
     new:
       login: "Đăng nhập"

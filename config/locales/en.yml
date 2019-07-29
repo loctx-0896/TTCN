@@ -6,6 +6,7 @@ en:
     update_cart:
       fail: "Update to cart fail"
   controllers:
+    before_order: "Login, please!!!"
     admin:
       categories:
         add_success: "Add successful"
@@ -22,6 +23,11 @@ en:
         delete_fail: "Delete fail"
         not_found_product: "Product not found"
         not_found_category: "Category not found"
+    orders:
+      product_cart_empty: "Cart empty"
+      order_success: "Order successful"
+      order_fail: "Order fail"
+      phone_empty: "Phone number cannot be empty"
     sessions:
       login_success: "Successful login"
       login_fail: "Fail login"
@@ -112,6 +118,13 @@ en:
       quick_view: "Quick View"
     purchase:
       add_to_cart: "Add to Cart"
+  orders:
+    new:
+      title: "Infomation Order"
+      name: "Your name"
+      phone: "Your phone"
+      address: "Your address"
+      submit: "Submit"
   sessions:
     new:
       login: "Login"
