@@ -14,6 +14,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :fb_token
       t.string :gg_token
       t.string :tw_token
+      t.string :picture
 
       t.timestamps
     end

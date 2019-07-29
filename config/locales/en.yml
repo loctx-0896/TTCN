@@ -1,4 +1,13 @@
 en:
+  activerecord:
+    enums:
+      user:
+        roles:
+          guess: "Guess"
+          admin: "Admin"
+        activateds:
+          unactive: "Unactive"
+          active: "Active"
   alert:
     add_to_cart:
       success: "Add to cart successful"
@@ -7,6 +16,7 @@ en:
       fail: "Update to cart fail"
   controllers:
     before_order: "Login, please!!!"
+    not_right: "Not right!!!"
     admin:
       categories:
         add_success: "Add successful"
@@ -23,6 +33,14 @@ en:
         delete_fail: "Delete fail"
         not_found_product: "Product not found"
         not_found_category: "Category not found"
+      users:
+        add_success: "Add successful"
+        add_fail: "Add fail"
+        update_success: "Update successful"
+        update_fail: "Update fail"
+        find_fail: "This is user not exist"
+        destroy_success: "Destroy successful"
+        destroy_fail: "Destroy fail"
     orders:
       product_cart_empty: "Cart empty"
       order_success: "Order successful"
@@ -88,6 +106,40 @@ en:
         price: "Price"
         category_name: "Category"
         save: "Save"
+    users:
+      index:
+        title: "Users"
+        add_user: "Add user"
+        name: "Name"
+        picture: "Avatar"
+        email: "Email"
+        phone: "Phone number"
+        activated: "Status"
+        role: "Role"
+        function: "Function"
+      user:
+        edit: "Edit"
+        delete: "Delete"
+        confirm: "Are you sure to delete?"
+      new:
+        title: "Create user"
+        name: "Name"
+        email: "Email"
+        phone: "Phone number"
+        password: "Password"
+        role: "Role"
+        save: "Save"
+        picture: "Avatar"
+      edit:
+        title: "Update user"
+        name: "Name"
+        email: "Email"
+        phone: "Phone number"
+        activated: "Status"
+        password: "Password"
+        role: "Role"
+        save: "Save"
+        picture: "Avatar"
   carts:
     index:
       title: "Cart"
@@ -114,6 +166,7 @@ en:
       discount: "Discount"
       blog: "Blog"
       contact: "Contact"
+      manager: "Management"
     products:
       quick_view: "Quick View"
     purchase:

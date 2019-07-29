@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
     t.string "fb_token"
     t.string "gg_token"
     t.string "tw_token"
+    t.string "picture"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -19,4 +19,10 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t "controllers.before_order"
     redirect_to login_url
   end
+
+  def admin_user
+    return if current_user.admin?
+    flash[:danger] = t "controllers.not_right"
+    redirect_to root_path
+  end
 end

@@ -12,10 +12,14 @@
         </div>
         <div class="right-top-bar flex-w h-full">
           <% if logged_in? %>
-            <a href="/login" class="flex-c-m trans-04 p-lr-25">
-              <%= t(".my_account") %>
-            </a>
-            <%= link_to t(".logout"), logout_path, method: :delete, class: "flex-c-m trans-04 p-lr-25" %>
+            <% if current_user.admin? %>
+              <%= link_to t(".manager"), logout_path, class: "flex-c-m trans-04 p-lr-25" %>
+              <%= link_to t(".my_account"), logout_path, class: "flex-c-m trans-04 p-lr-25" %>
+              <%= link_to t(".logout"), logout_path, method: :delete, class: "flex-c-m trans-04 p-lr-25" %>
+            <% else %>
+              <%= link_to t(".my_account"), logout_path, class: "flex-c-m trans-04 p-lr-25" %>
+              <%= link_to t(".logout"), logout_path, method: :delete, class: "flex-c-m trans-04 p-lr-25" %>
+            <% end %>
           <% else %>
             <li><%= link_to t(".login"), login_path, class: "flex-c-m trans-04 p-lr-25" %></li>
           <% end %>

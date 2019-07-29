@@ -1,0 +1,33 @@
+<% provide :title, t(".title") %>
+<div class="content">
+  <%= link_to t(".add_user"), new_admin_user_path, class: "add_user" %>
+  <table class="table">
+    <thead class=" text-primary">
+      <th>
+        <%= t(".name") %>
+      </th>
+      <th>
+        <%= t(".picture") %>
+      </th>
+      <th>
+        <%= t(".email") %>
+      </th>
+      <th>
+        <%= t(".phone") %>
+      </th>
+      <th>
+        <%= t(".activated") %>
+      </th>
+      <th>
+        <%= t(".role") %>
+      </th>
+      <th>
+        <%= t(".function") %>
+      </th>
+    </thead>
+    <tbody>
+      <%= render @users %>
+    </tbody>
+  </table>
+  <%= will_paginate %>
+</div>
