@@ -52,7 +52,9 @@
           </div>
 
           <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
-            <%= t(".proceed_to_checkout") %>
+            <%= link_to new_order_path do %>
+              <%= t(".proceed_to_checkout") %>
+            <% end %>
           </button>
         </div>
       </div>

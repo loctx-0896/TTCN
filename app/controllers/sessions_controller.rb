@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       log_in user
       check_rememberme user
       flash[:danger] = t "controllers.sessions.login_success"
-      redirect_to root_path
+      redirect_back_or store_location
     else
       flash[:danger] = t "controllers.sessions.login_fail"
       render :new

@@ -33,15 +33,15 @@ Category.create!(name: "LocDepTrai6",
 
 10.times do |n|
   name  = Faker::Name.name
-  Product.create!(name: name, category_id: 1)
+  Product.create!(name: name, price: 20000, category_id: 1)
 end
 
 10.times do |n|
   name  = Faker::Name.name
-  Product.create!(name: name, category_id: 2)
+  Product.create!(name: name, price: 30000, category_id: 2)
 end
 
 10.times do |n|
   name  = Faker::Name.name
-  Product.create!(name: name, category_id: 3)
+  Product.create!(name: name, price: 40000, category_id: 3)
 end
