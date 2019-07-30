@@ -5,10 +5,12 @@ class User < ActiveRecord::Base
   before_create :create_activation_digest
   enum activated: {active: 1, unactive: 0}
   enum role: {guess: 0, admin: 1}
+  mount_uploader :picture, PictureUploader
   has_many :orders
   has_many :contacts, dependent: :destroy
   has_many :reviews, dependent: :destroy
   has_secure_password
+  scope :sort_users, ->{order(created_at: :desc)}
   validates :name, presence: true,
             length: {maximum: Settings.users.name.maximum}
   validates :email, presence: true,

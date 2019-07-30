@@ -1,4 +1,13 @@
 vi:
+  activerecord:
+    enums:
+      user:
+        roles:
+          guess: "Người dùng"
+          admin: "Quản trị viên"
+        activateds:
+          unactive: "Khóa"
+          active: "Kích hoạt"
   alert:
     add_to_cart:
       success: "Thêm vào giỏ hàng thành công"
@@ -7,6 +16,7 @@ vi:
       fail: "Sửa giỏ hàng thất bại"
   controllers:
     before_order: "Vui lòng đăng nhập."
+    not_right: "Không có quyền!!!"
     admin:
       categories:
         add_success: "Thêm thành công"
@@ -23,6 +33,14 @@ vi:
         delete_fail: "Xóa thất bại"
         not_found_product: "Sản phẩm không tồn tại"
         not_found_category: "Danh mục sản phẩm không tồn tại"
+      users:
+        add_success: "Thêm người dùng thành công"
+        add_fail: "Thêm người dùng thất bại"
+        update_success: "Sửa người dùng thành công"
+        update_fail: "Sửa người dùng thất bại"
+        find_fail: "Người dùng không tồn tại"
+        destroy_success: "Xóa thành công"
+        destroy_fail: "Xóa thất bại"
     orders:
       product_cart_empty: "Giỏ hàng trống"
       order_success: "Đặt hàng thành công"
@@ -88,6 +106,40 @@ vi:
         price: "Giá"
         category_name: "Danh mục"
         save: "Lưu"
+    users:
+      index:
+        title: "Người dùng"
+        add_user: "Thêm nguời dùng"
+        name: "Tên"
+        picture: "Ảnh đại diện"
+        email: "Email"
+        phone: "Số điện thoại"
+        activated: "Trạng thái"
+        role: "Quyền"
+        function: "Chức năng"
+      user:
+        edit: "Sửa"
+        delete: "Xóa"
+        confirm: "Bạn có chắc chắn muốn xóa?"
+      new:
+        title: "Tạo người dùng"
+        name: "Tên"
+        email: "Email"
+        phone: "Số điện thoại"
+        password: "Mật khẩu"
+        role: "Quyền hạn"
+        save: "Lưu"
+        picture: "Ảnh đại diện"
+      edit:
+        title: "Cập nhật người dùng"
+        name: "Tên"
+        email: "Email"
+        phone: "Số điện thoại"
+        activated: "Trạng thái"
+        password: "Mật khẩu"
+        role: "Quyền hạn"
+        save: "Lưu"
+        picture: "Ảnh đại diện"
   carts:
     index:
       title: "Giỏ hàng"
@@ -114,6 +166,7 @@ vi:
       discount: "Khuyến mãi"
       blog: "Blog"
       contact: "Liên hệ"
+      manager: "Quản trị viên"
     products:
       quick_view: "Xem nhanh"
     purchase:
