@@ -12,14 +12,8 @@
         </div>
         <div class="right-top-bar flex-w h-full">
           <% if logged_in? %>
-            <% if current_user.admin? %>
-              <%= link_to t(".manager"), logout_path, class: "flex-c-m trans-04 p-lr-25" %>
-              <%= link_to t(".my_account"), logout_path, class: "flex-c-m trans-04 p-lr-25" %>
-              <%= link_to t(".logout"), logout_path, method: :delete, class: "flex-c-m trans-04 p-lr-25" %>
-            <% else %>
-              <%= link_to t(".my_account"), logout_path, class: "flex-c-m trans-04 p-lr-25" %>
-              <%= link_to t(".logout"), logout_path, method: :delete, class: "flex-c-m trans-04 p-lr-25" %>
-            <% end %>
+            <%= link_to t(".my_account"), user_path(current_user.id), class: "flex-c-m trans-04 p-lr-25" %>
+            <%= link_to t(".logout"), logout_path, method: :delete, class: "flex-c-m trans-04 p-lr-25" %>
           <% else %>
             <li><%= link_to t(".login"), login_path, class: "flex-c-m trans-04 p-lr-25" %></li>
           <% end %>
@@ -29,7 +23,7 @@
     <div class="wrap-menu-desktop">
       <nav class="limiter-menu-desktop container">
         <!-- Logo desktop -->
-        <a href="#" class="logo">
+        <a href="<%= root_path %>" class="logo">
         <img src="assets/logo.png" alt="IMG-LOGO">
         </a>
         <!-- Menu desktop -->
@@ -55,6 +49,22 @@
             <li>
               <%= link_to t(".contact") %>
             </li>
+            <% if logged_in? %>
+              <% if current_user.admin? %>
+                <li>
+                  <%= link_to t(".manager") %>
+                  <ul class="sub-menu">
+                    <li><%= link_to t(".categories"), admin_categories_path %></li>
+                    <li><%= link_to t(".users"), admin_users_path %></li>
+                    <li><%= link_to t(".products"), admin_products_path %></li>
+                    <li><%= link_to t(".orders"), admin_products_path %></li>
+                    <li><%= link_to t(".contacts"), admin_products_path %></li>
+                  </ul>
+                </li>
+              <% else %>
+              <% end %>
+            <% else %>
+            <% end %>
           </ul>
         </div>
         <!-- Icon header -->
