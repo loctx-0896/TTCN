@@ -59,6 +59,8 @@ vi:
       phone_empty: "Số điện thoại không được trống"
     orders_history:
       not_found: "Đơn hàng không tồn tại"
+      update_order_fail: "Cập nhật thất bại"
+      update_order_successful: "Cập nhật thành công"
     sessions:
       login_success: "Đăng nhập thành công"
       login_fail: "Tài khoản hoặc mật khẩu không đúng"
@@ -92,6 +94,34 @@ vi:
         name: "Tên"
         save_changes: "Lưu"
         new_name_category: "Chọn danh mục cha"
+    orders:
+      index:
+        title: "Lịch sử đơn mua"
+        name: "Tên"
+        phone: "Số điện thoại đặt hàng"
+        address: "Địa chỉ nhận hàng"
+        order_date: "Ngày đặt hàng"
+        status: "Trạng thái đơn hàng"
+        detail: "Chi tiết đơn hàng"
+        function: "Chức năng"
+        date_success: "Ngày giao"
+      order:
+        detail: "Chi tiết"
+        edit: "Sửa"
+      show:
+        title: "Chi tiết đơn hàng"
+        product: "Tên sản phẩm"
+        quantity: "Số lượng"
+        current_price: "Giá lúc mua"
+        total_price: "Tổng tiền"
+        name_person_purchase: "Người đặt hàng: "
+        name_person_receive: "Người nhận hàng: "
+        address_person_receive: "Địa chỉ nhận hàng: "
+        total_cart: "Tổng hóa đơn: "
+      edit:
+        title: "Sửa trạng thái"
+        status: "Trạng thái"
+        save: "Lưu"
     products:
       product:
         edit: "Sửa"

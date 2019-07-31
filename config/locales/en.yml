@@ -59,6 +59,8 @@ en:
       phone_empty: "Phone number cannot be empty"
     orders_history:
       not_found: "Order not found"
+      update_order_fail: "Order update fail"
+      update_order_successful: "Order update successful"
     sessions:
       login_success: "Successful login"
       login_fail: "Fail login"
@@ -92,6 +94,34 @@ en:
         name: "Name"
         save_changes: "Save"
         new_name_category: "Select the parent category"
+    orders:
+      index:
+        title: "History Orders"
+        name: "Name"
+        phone: "Phone number order"
+        address: "Address move product"
+        order_date: "Order day"
+        status: "Status"
+        detail: "Detail"
+        function: "Function"
+        date_success: "Date success"
+      order:
+        detail: "Detail"
+        edit: "Edit"
+      show:
+        title: "Product detail"
+        product: "Product name"
+        quantity: "Quantity"
+        current_price: "Current price"
+        total_price: "Total price"
+        name_person_purchase: "Person purchase: "
+        name_person_receive: "Person receive: "
+        address_person_receive: "Address receive: "
+        total_cart: "Total cart: "
+      edit:
+        title: "Edit status order"
+        status: "Status"
+        save: "Save"
     products:
       product:
         edit: "Edit"
