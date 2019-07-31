@@ -16,6 +16,10 @@ en:
         statuses:
           active: "Active"
           unactive: "Unactive"
+      contact:
+        statuses:
+          success: "Successful"
+          pending: "Pending"
   time:
     formats:
       long: "%B %d, %Y %H:%M"
@@ -36,6 +40,10 @@ en:
         delete_success: "Delete successful"
         delete_fail: "Delete fail"
         not_found_category: "Category not found"
+      contacts:
+        update_success: "Update successful"
+        update_fail: "Update fail"
+        not_found_contact: "Contact not found"
       products:
         add_success: "Add successful"
         add_fail: "Add fail"
@@ -97,6 +105,25 @@ en:
         name: "Name"
         save_changes: "Save"
         new_name_category: "Select the parent category"
+    contacts:
+      index:
+        title: "Contacts"
+        name: "Name"
+        phone: "Phone number"
+        email: "Enail"
+        food_name: "Food name"
+        picture: "Picture"
+        status: "Status"
+        user: "User feaback"
+        description: "Description"
+        date_feaback: "Date feaback"
+        function: "Function"
+      contact:
+        edit: "Edit"
+      edit:
+        title: "Edit status"
+        status: "Status"
+        save: "Save"
     orders:
       index:
         title: "History Orders"

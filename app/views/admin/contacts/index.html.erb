@@ -1,0 +1,41 @@
+<% provide :title, t(".title") %>
+<div class="content">
+  <table class="table">
+    <thead class=" text-primary">
+      <th>
+        <%= t(".name") %>
+      </th>
+      <th>
+        <%= t(".email") %>
+      </th>
+      <th>
+        <%= t(".phone") %>
+      </th>
+      <th>
+        <%= t(".food_name") %>
+      </th>
+      <th>
+        <%= t(".picture") %>
+      </th>
+      <th>
+        <%= t(".description") %>
+      </th>
+      <th>
+        <%= t(".user") %>
+      </th>
+      <th>
+        <%= t(".date_feaback") %>
+      </th>
+      <th>
+        <%= t(".status") %>
+      </th>
+      <th>
+        <%= t(".function") %>
+      </th>
+    </thead>
+    <tbody>
+      <%= render @contacts %>
+    </tbody>
+  </table>
+  <%= will_paginate %>
+</div>
