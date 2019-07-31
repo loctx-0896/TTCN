@@ -58,7 +58,7 @@ class Admin::OrdersController < ApplicationController
   end
 
   def redirect_success
-    flash[:success] = t "controllers.admin.orders_history.update_order_successful"
+    flash[:success] = t "controllers.admin.orders_history.update_order_success"
     redirect_to admin_orders_path
   end
 

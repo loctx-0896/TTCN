@@ -18,5 +18,6 @@ Rails.application.routes.draw do
     resources :products_detail, only: [:show]
     resources :users
     resources :orders_histories, only: [:index, :show]
+    resources :contacts, only: [:new, :create]
   end
 end
