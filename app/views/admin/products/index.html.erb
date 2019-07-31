@@ -1,8 +1,9 @@
 <% provide :title, t(".title") %>
-<div class="content">
-  <%= link_to t(".add_product"), new_admin_product_path, class: "add_product" %>
-  <table class="table">
-    <thead class=" text-primary">
+
+<%= link_to t(".add_product"), new_admin_product_path, class: "add_product" %>
+<table class="table">
+  <thead class=" text-primary">
+    <% if @products.present? %>
       <th>
         <%= t(".name") %>
       </th>
@@ -27,10 +28,12 @@
       <th>
         <%= t(".function") %>
       </th>
-    </thead>
-    <tbody>
-      <%= render @products %>
-    </tbody>
-  </table>
-  <%= will_paginate %>
-</div>
+    <% else %>
+      <h4 class="null_data">Chưa có sản phẩm nào</h4>
+    <% end %>
+  </thead>
+  <tbody>
+    <%= render @products %>
+  </tbody>
+</table>
+<%= will_paginate %>

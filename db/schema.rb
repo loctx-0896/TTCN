@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
   create_table "detail_orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "quantity", default: 1
     t.float "current_price"
+    t.string "name_product"
     t.bigint "order_id"
     t.bigint "product_id"
     t.datetime "created_at", null: false
@@ -50,6 +51,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
     t.string "name"
     t.string "phone"
     t.string "address"
+    t.float "total_price"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

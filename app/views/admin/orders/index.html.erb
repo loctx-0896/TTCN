@@ -1,7 +1,8 @@
 <% provide :title, t(".title") %>
-<div class="content">
-  <table class="table">
-    <thead class=" text-primary">
+
+<table class="table">
+  <thead class=" text-primary">
+    <% if @orders.present? %>
       <th>
         <%= t ".name" %>
       </th>
@@ -17,7 +18,7 @@
       <th>
         <%= t ".date_success" %>
       </th>
-      <th>
+      <th class="change_status_order">
         <%= t ".status" %>
       </th>
       <th>
@@ -26,10 +27,13 @@
       <th>
         <%= t ".function" %>
       </th>
-    </thead>
-    <tbody>
-      <%= render partial: "admin/orders/order", collection: @orders %>
-    </tbody>
-  </table>
-  <%= will_paginate %>
-</div>
+    <% else %>
+      <h4 class="null_data">Chưa có đơn đặt hàng nào</h4>
+    <% end %>
+  </thead>
+  <tbody>
+    <%= render partial: "admin/orders/order", collection: @orders %>
+  </tbody>
+</table>
+<%= will_paginate %>
+<%= javascript_include_tag "ajax_cart" %>

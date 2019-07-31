@@ -1,7 +1,8 @@
 <% provide :title, t(".title") %>
-<div class="content">
-  <table class="table">
-    <thead class=" text-primary">
+
+<table class="table">
+  <thead class=" text-primary">
+    <%if @contacts.present? %>
       <th>
         <%= t(".name") %>
       </th>
@@ -32,10 +33,12 @@
       <th>
         <%= t(".function") %>
       </th>
-    </thead>
-    <tbody>
-      <%= render @contacts %>
-    </tbody>
-  </table>
-  <%= will_paginate %>
-</div>
+    <% else %>
+      <h4 class="null_data">Chưa có liên hệ nào</h4>
+    <% end %>
+  </thead>
+  <tbody>
+    <%= render @contacts %>
+  </tbody>
+</table>
+<%= will_paginate %>

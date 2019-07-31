@@ -30,7 +30,7 @@ class OrdersController < ApplicationController
   def detail_order_params products
     products.each do |p|
       @detail_orders = @order.detail_orders.new(product_id: p.id,
-        quantity: p.total_quantity, current_price: p.price)
+        quantity: p.total_quantity, current_price: p.price, name_product: p.name)
       @detail_orders.save
     end
     cookies.delete :products

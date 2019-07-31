@@ -1,18 +1,22 @@
 <% provide :title, t(".title") %>
-<div class="content">
-  <%= link_to t(".add_category"), new_admin_category_path, class: "add_category" %>
-  <table class="table">
-    <thead class=" text-primary">
+
+<%= link_to t(".add_category"), new_admin_category_path, class: "add_category" %>
+<table class="table">
+  <thead class=" text-primary">
+    <%if @categories.present? %>
       <th>
         <%= t(".name") %>
       </th>
       <th>
         <%= t(".function") %>
       </th>
-    </thead>
-    <tbody>
-      <%= render @categories %>
-    </tbody>
-  </table>
-  <%= will_paginate %>
-</div>
+    <% else %>
+      <h4 class="null_data">Chưa có danh mục</h4>
+    <% end %>
+  </thead>
+  <tbody>
+    <%= render @categories %>
+  </tbody>
+</table>
+<%= will_paginate %>
+

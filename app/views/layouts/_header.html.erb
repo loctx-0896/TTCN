@@ -35,9 +35,13 @@
             <li>
               <%= link_to t(".category") %>
               <ul class="sub-menu">
-                <li><a href="#">Trà sữa</a></li>
-                <li><a href="#">Nước trái cây</a></li>
-                <li><a href="#">XXX</a></li>
+                <% @categories.each do |item| %>
+                  <li>
+                    <%= link_to root_path do %>
+                      <%= item.name %>
+                    <% end %>
+                  </li>
+                <% end %>
               </ul>
             </li>
             <li class="label1" data-label1="hot">

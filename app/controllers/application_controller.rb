@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include SessionsHelper
   include CartHelper
-  before_action :set_locale
+  before_action :set_locale, :categories
 
   private
   def set_locale
@@ -24,5 +24,9 @@ class ApplicationController < ActionController::Base
     return if current_user.admin?
     flash[:danger] = t "controllers.not_right"
     redirect_to root_path
+  end
+
+  def categories
+     @categories = Category.sort_categories
   end
 end

@@ -1,15 +1,14 @@
 <% provide :title, t(".title") %>
 
-<div class="content">
+
 <h1><%= t(".update_category") %></h1>
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for [:admin, @category] do |f| %>
-      <%= render "shared/error_messages", object: f.object %>
+<div class="col-md-6 col-md-offset-3">
+  <%= form_for [:admin, @category] do |f| %>
+    <%= render "shared/error_messages", object: f.object %>
 
-      <%= f.label :name, t(".name")%>
-      <%= f.text_field :name, class: "form-control" %>
+    <%= f.label :name, t(".name")%>
+    <%= f.text_field :name, class: "form-control" %>
 
-      <%= f.submit t(".save_changes"), class: "btn btn-primary" %>
-    <% end %>
-  </div>
+    <%= f.submit t(".save_changes"), class: "btn btn-primary" %>
+  <% end %>
 </div>

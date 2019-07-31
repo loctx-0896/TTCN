@@ -1,7 +1,7 @@
 <% provide :title, t(".title") %>
-<div class="content">
-  <h1><%= t(".title") %></h1>
-  <div class="col-md-6 col-md-offset-3">
+
+<h1><%= t(".title") %></h1>
+<div class="col-md-6 col-md-offset-3">
     <%= form_for [:admin, @products] do |f| %>
     <%= render "shared/error_messages", object: f.object %>
 
@@ -25,5 +25,4 @@
 
     <%= f.submit t(".save"), class: "btn btn-primary" %>
     <% end %>
-  </div>
 </div>

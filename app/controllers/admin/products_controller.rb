@@ -34,6 +34,10 @@ class Admin::ProductsController < ApplicationController
   end
 
   def destroy
+    detail_order = DetailOrder.of_product_id @product.id
+    if detail_order
+      detail_order.update_all product_id: nil
+    end
     if @product.destroy
       flash[:success] = t "controllers.admin.products.delete_success"
     else

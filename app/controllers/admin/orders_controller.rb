@@ -58,12 +58,12 @@ class Admin::OrdersController < ApplicationController
   end
 
   def redirect_success
-    flash[:success] = t "controllers.admin.orders_history.update_order_success"
+    flash[:success] = t "controllers.orders_history.update_order_success"
     redirect_to admin_orders_path
   end
 
   def redirect_fail
-    flash[:danger] = t "controllers.admin.orders_history.update_order_fail"
+    flash[:danger] = t "controllers.orders_history.update_order_fail"
     redirect_to admin_orders_path
   end
 end
