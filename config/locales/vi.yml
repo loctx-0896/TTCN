@@ -8,6 +8,17 @@ vi:
         activateds:
           unactive: "Khóa"
           active: "Kích hoạt"
+      order:
+        statuses:
+          order_success: "Đặt hàng thành công"
+          delivered: "Đã giao"
+      product:
+        statuses:
+          active: "Kích hoạt"
+          unactive: "Không kích hoạt"
+  time:
+    formats:
+      long: "%d %B, %Y %H:%M"
   alert:
     add_to_cart:
       success: "Thêm vào giỏ hàng thành công"
@@ -46,6 +57,8 @@ vi:
       order_success: "Đặt hàng thành công"
       order_fail: "Đặt hàng thất bại"
       phone_empty: "Số điện thoại không được trống"
+    orders_history:
+      not_found: "Đơn hàng không tồn tại"
     sessions:
       login_success: "Đăng nhập thành công"
       login_fail: "Tài khoản hoặc mật khẩu không đúng"
@@ -188,6 +201,23 @@ vi:
       phone: "Số điện thoại của bạn"
       address: "Địa chỉ nhận hàng"
       submit: "Hoàn thành"
+  orders_histories:
+    index:
+      title: "Lịch sử đơn mua"
+      name: "Tên"
+      phone: "Số điện thoại đặt hàng"
+      address: "Địa chỉ nhận hàng"
+      order_date: "Ngày đặt hàng"
+      status: "Trạng thái đơn hàng"
+      detail: "Chi tiết đơn hàng"
+    order:
+      detail: "Chi tiết"
+    show:
+      title: "Chi tiết đơn hàng"
+      product: "Tên sản phẩm"
+      quantity: "Số lượng"
+      current_price: "Giá lúc mua"
+      total_price: "Tổng tiền"
   products_detail:
     show:
       title: "Chi tiết sản phẩm"
@@ -216,6 +246,7 @@ vi:
       phone: "Số điện thoại: "
       email: "Email: "
       update_profile: "Cập nhật trang cá nhân"
+      orders: "Lịch sử đơn hàng"
     edit:
       title: "Cập nhật thông tin cá nhân"
       name: "Tên"

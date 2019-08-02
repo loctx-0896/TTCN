@@ -8,6 +8,17 @@ en:
         activateds:
           unactive: "Unactive"
           active: "Active"
+      order:
+        statuses:
+          order_success: "order successful"
+          delivered: "delivered"
+      product:
+        statuses:
+          active: "Active"
+          unactive: "Unactive"
+  time:
+    formats:
+      long: "%B %d, %Y %H:%M"
   alert:
     add_to_cart:
       success: "Add to cart successful"
@@ -46,6 +57,8 @@ en:
       order_success: "Order successful"
       order_fail: "Order fail"
       phone_empty: "Phone number cannot be empty"
+    orders_history:
+      not_found: "Order not found"
     sessions:
       login_success: "Successful login"
       login_fail: "Fail login"
@@ -188,6 +201,23 @@ en:
       phone: "Your phone"
       address: "Your address"
       submit: "Submit"
+  orders_histories:
+    index:
+      title: "History Orders"
+      name: "Name"
+      phone: "Phone number order"
+      address: "Address move product"
+      order_date: "Order day"
+      status: "Status"
+      detail: "Detail"
+    order:
+      detail: "Detail"
+    show:
+      title: "Product detail"
+      product: "Product name"
+      quantity: "Quantity"
+      current_price: "Current price"
+      total_price: "Total price"
   products_detail:
     show:
       title: "Product detail"
@@ -216,6 +246,7 @@ en:
       phone: "Phone number: "
       email: "Email: "
       update_profile: "Update profile"
+      orders: "Orders history"
     edit:
       title: "Update profile"
       name: "Name"
