@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
     t.string "food_name"
     t.string "picture"
     t.text "description"
+    t.integer "status", default: 1
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

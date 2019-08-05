@@ -16,6 +16,10 @@ vi:
         statuses:
           active: "Kích hoạt"
           unactive: "Không kích hoạt"
+      contact:
+        statuses:
+          success: "Đã xong"
+          pending: "Chưa xử lí"
   time:
     formats:
       long: "%d %B, %Y %H:%M"
@@ -36,6 +40,10 @@ vi:
         delete_success: "Xóa thành công"
         delete_fail: "Xóa thất bại"
         not_found_category: "Danh mục không tồn tại"
+      contacts:
+        update_success: "Cập nhật thành công"
+        update_fail: "Cập nhật thất bại"
+        not_found_contact: "Không tồn tại phản hồi"
       products:
         add_success: "Thêm thành công"
         add_fail: "Thêm thất bại"
@@ -97,6 +105,25 @@ vi:
         name: "Tên"
         save_changes: "Lưu"
         new_name_category: "Chọn danh mục cha"
+    contacts:
+      index:
+        title: "Liên hệ, phản hồi"
+        name: "Tên"
+        phone: "Số điện thoại"
+        email: "Email"
+        food_name: "Tên món ăn đề xuất"
+        picture: "Hình ảnh minh họa"
+        status: "Trạng thái"
+        user: "Người phản hồi"
+        description: "Chi tiết"
+        date_feaback: "Ngày phản hồi"
+        function: "Chức năng"
+      contact:
+        edit: "Sửa"
+      edit:
+        title: "Sửa trạng thái"
+        status: "Trạng thái"
+        save: "Lưu"
     orders:
       index:
         title: "Lịch sử đơn mua"
