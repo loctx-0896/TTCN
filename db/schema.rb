@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_072956) do
     t.string "email"
     t.string "phone"
     t.string "food_name"
+    t.string "picture"
     t.text "description"
     t.bigint "user_id"
     t.datetime "created_at", null: false

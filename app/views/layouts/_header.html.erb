@@ -47,7 +47,7 @@
               <%= link_to t(".blog") %>
             </li>
             <li>
-              <%= link_to t(".contact") %>
+              <%= link_to t(".contact"), new_contact_path %>
             </li>
             <% if logged_in? %>
               <% if current_user.admin? %>

@@ -69,6 +69,9 @@ vi:
       update_success: "Cập nhật thông tin cá nhân thành công"
       update_fail: "Cập nhật thông tin cá nhân thất bại"
       can_not: "Không thể sửa thông tin của người khác. Đây là thông tin của bạn."
+    contacts:
+      add_success: "Gửi phản hồi thành công"
+      add_fail: "Gửi phản hồi thất bại. Gửi lại"
   helpers:
     base_title: "Mua ngay!"
   admin:
@@ -202,6 +205,16 @@ vi:
       delete: "Xóa"
     cart_products:
       confirm: "Bạn có chắc chắn muốn xóa?"
+  contacts:
+    new:
+      title: "Gửi phản hồi hoặc đề xuất món ăn mới"
+      your_name: "Tên của bạn (*)"
+      email: "Email (*)"
+      phone: "Số điện thoại (*)"
+      food_name: "Món ăn đề xuất"
+      picture: "Hình ảnh (nếu có)"
+      description: "Mô tả hoặc phản hồi(*)"
+      save: "Gửi"
   layouts:
     header:
       language_en: "English"
