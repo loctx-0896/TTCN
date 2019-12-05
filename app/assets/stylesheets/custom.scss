@@ -109,3 +109,20 @@ input[type=number]::-webkit-inner-spin-button {
   color: red;
   padding-left: 50px;
 }
+
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav_input {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background: #ffffcc;
+}
+
+.add_user {
+  float: left;
+}

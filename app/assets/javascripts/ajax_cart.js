@@ -34,8 +34,8 @@ $('.total-quantity-product').change(function () {
       quantity: quantity
     },
     success: function (data) {
-      $('#total-price-'+product_id).text((data.total_quantity*data.price)+'VND');
-      $('#total-cart').text((data.total_cart)+'VND');
+      $('#total-price-'+product_id).text((data.total_quantity*data.price)+' VND');
+      $('#total-cart').text((data.total_cart)+' VND');
     },
     error: function () {
       alert(I18n.t("alert.update_cart.fail"));

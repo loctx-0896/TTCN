@@ -30,6 +30,7 @@ vi:
     update_cart:
       fail: "Sửa giỏ hàng thất bại"
   controllers:
+    search_faill: "Không có kết quả"
     before_order: "Vui lòng đăng nhập."
     not_right: "Không có quyền!!!"
     admin:

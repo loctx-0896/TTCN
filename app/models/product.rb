@@ -7,4 +7,5 @@ class Product < ApplicationRecord
   mount_uploader :picture, PictureUploader
   scope :sort_products, ->{order(created_at: :desc)}
   scope :find_product_by_id, ->(ids){where id: ids}
+  scope :find_product_by_category_id, ->(id){where category_id: id}
 end

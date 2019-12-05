@@ -4,7 +4,7 @@ class OrdersHistoriesController < ApplicationController
   end
 
   def show
-    @detail_orders = DetailOrder.find_by_order_id(params[:id])
+    @detail_orders = DetailOrder.find_by_order_id_vip(params[:id])
     return if @detail_orders
     flash[:danger] = t "controllers.orders_history.not_found"
     redirect_to root_path
